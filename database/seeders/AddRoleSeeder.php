@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b3f5d6a9118b99532a925724a987eb6b0146b8164716d3bdc21dfd9ec928a05
-size 249
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class AddRoleSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+    }
+}

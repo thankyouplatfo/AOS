@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1d43bc339af078235d8fdee1f3cd800f3600c9c683953fa7e6272198495a7bf
-size 859
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class AuthController extends Controller
+{
+    public function showLoginForm()
+    {
+        return view('login');
+    }
+
+    public function login(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        if (!auth()->attempt($request->only('email', 'password'))) {
+
+            $error = \Illuminate\Validation\ValidationException::withMessages([
+
+                'email' => [__('auth.failed')],
+            ]);
+            throw $error;
+        }
+
+        return redirect()->route('admin.cms.homePage' /**,[
+    'user' => User::all()
+    ] */);
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+
+        return redirect('/');
+    }
+}

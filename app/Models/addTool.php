@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b62cce9d2eb4a343cd30f43cdcc44dd2182c435985d5ad45ed4422d11b8f7f6b
-size 424
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class addTool extends Model
+{
+    use HasFactory;
+    protected $fillable = ['name','url','about','add_category_tool_id'];
+    //
+    public function addCategoryTool()
+    {
+        # code...
+        return $this->belongsTo(addCategoryTool::class,'add_category_tool_id');
+    }
+}

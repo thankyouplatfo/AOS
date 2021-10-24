@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:680cbf7b067ec880c0af522b28c25f0eec1d7f11834d012256d9781f22a37ad0
-size 511
+<?php
+
+namespace Database\Factories;
+
+use App\Models\addUniversity;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class AddUniversityFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = addUniversity::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            //
+        ];
+    }
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91b83b03cb96032e8ff3ae61e680ae9072750cdb5a8e8005838b63f1e8fd317b
-size 360
+<?php
+
+namespace Tests\Feature;
+
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\TestCase;
+
+class ExampleTest extends TestCase
+{
+    /**
+     * A basic test example.
+     *
+     * @return void
+     */
+    public function test_example()
+    {
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+    }
+}

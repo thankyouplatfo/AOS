@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f2df11d5b3866a11d1a5d4e6059f80a5f1a500ab9ffe717900e26b921a9c8c0
-size 502
+<?php
+
+namespace Database\Factories;
+
+use App\Models\addCollege;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class AddCollegeFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = addCollege::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            //
+        ];
+    }
+}

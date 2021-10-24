@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee13f4f499a4e3a12b3f9aaf68542b5029ac88ad5ddaa48611efbc1e69f4db06
-size 493
+<?php
+
+namespace Database\Factories;
+
+use App\Models\addCity;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class AddCityFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = addCity::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            //
+        ];
+    }
+}

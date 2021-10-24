@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfa05bccff2a80661f4faf468fc4ddddb92c6215dc90788e086600157acff687
-size 326
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class contact extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'name',
+        'email',
+        'subject',
+        'message',
+        'receiveReply',
+    ];
+}

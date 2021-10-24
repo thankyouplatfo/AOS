@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28f73129c386b1b2c8f68b5f61495067e7dc8ca74d07647f57558abef0cadfa0
-size 490
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\addCategoryTool;
+use App\Models\Category;
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //Category::factory()
+        //    ->count(5)
+        //    ->hasMovies(3)
+        //    ->create();
+
+        $this->call([
+            UserSeeder::class,
+        ]);
+    }
+}

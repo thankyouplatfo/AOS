@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c740c1a2ae743776f10a7fce6b3a3f10f94dd9346c53d0a40d7965d234e850b4
-size 987
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAddSpecialtiesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('add_specialties', function (Blueprint $table) {
+            $table->id();
+            $table->string('image');
+            $table->longText('alt');
+            $table->string('name');
+            $table->string('slug');
+            $table->string('url');
+            $table->foreignId('add_college_id')->constrained()->cascadeOnDelete();
+            $table->longText('about');
+            $table->longText('keywords');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('add_specialties');
+    }
+}

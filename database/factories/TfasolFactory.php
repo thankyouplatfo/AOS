@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3293021f22cbc1c72fafe2345c2458d553dd3088cd32f38c86f34b877f4ae3db
-size 490
+<?php
+
+namespace Database\Factories;
+
+use App\Models\tfasol;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class TfasolFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = tfasol::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            //
+        ];
+    }
+}

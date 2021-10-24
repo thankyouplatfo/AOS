@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0eb7f46bc0450042cfd02b178fec06db4f6ac067bb3c61a427f516bd00733404
-size 547
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class addCity extends Model
+{
+    use HasFactory;
+    protected $fillable = ['name','slug','add_countrie_id'];
+    //
+    public function addCountry()
+    {
+        # code...
+        return $this->belongsTo(addCountry::class, 'add_countrie_id');
+    }
+    //
+    public function addUniversitys()
+    {
+        # code...
+        return $this->hasMany(addUniversity::class);
+        
+    }
+    
+}

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15c912882d1c71d95dfefa2b8381c90ec18e25a2d1523db43c94c802dadc5e87
-size 688
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class addCollege extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'image',
+        'alt',
+        'name',
+        'slug',
+        'type',
+        'url',
+        'add_universitie_id',
+        'about',
+        'keywords',
+    ];
+    //
+    public function addUniversity()
+    {
+        # code...
+        return $this->belongsTo(addUniversity::class,'add_universitie_id');
+    }
+    //
+    public function addSpecialtys()
+    {
+        # code...
+        return $this->hasMany(addSpecialty::class);
+    }
+
+}

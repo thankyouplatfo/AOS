@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cef23226536e9d928e3ceda16e8d659bba73ca77ac6bc4cb9ffefe5a52d91c4c
-size 1019
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAddCollegesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('add_colleges', function (Blueprint $table) {
+            $table->id();
+            $table->string('image');
+            $table->longText('alt');
+            $table->string('name');
+            $table->string('slug');
+            $table->string('type');
+            $table->string('url');
+            $table->foreignId('add_universitie_id')->constrained()->cascadeOnDelete();
+            $table->longText('about');
+            $table->longText('keywords');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('add_colleges');
+    }
+}

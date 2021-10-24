@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02358c50e3149b2d2e10b9a639710bc2e889d06c05869c58f1d5b1b3d6c2bf99
-size 508
+<?php
+
+namespace Database\Factories;
+
+use App\Models\addSpecialty;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class AddSpecialtyFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = addSpecialty::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            //
+        ];
+    }
+}
