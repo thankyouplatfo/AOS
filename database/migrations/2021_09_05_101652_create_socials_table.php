@@ -1,34 +1,3 @@
-<?php
-
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-class CreateSocialsTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('socials', function (Blueprint $table) {
-            $table->id();
-            $table->string('url');
-            $table->string('title');
-            $table->string('icon');
-            $table->timestamps();
-        });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('socials');
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:284a5cf47cf734e04b0ecf9820632206816739b492a6cb70f39c16de7266241d
+size 722

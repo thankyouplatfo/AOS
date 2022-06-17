@@ -1,35 +1,3 @@
-<?php
-
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-class CreateAddToolsTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('add_tools', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-			$table->string('url');
-			$table->longText('about')->nullable();
-			$table->foreignId('add_category_tool_id')->constrained()->cascadeOnDelete();
-            $table->timestamps();
-        });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('add_tools');
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1f66376fa9ce53fd2bce1f8b506a4518f2e0d0bd568b4cfab56a4e2b237a61b1
+size 804

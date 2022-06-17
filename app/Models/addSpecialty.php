@@ -1,27 +1,3 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class addSpecialty extends Model
-{
-    use HasFactory;
-    protected $fillable = [
-     'image',
-     'alt',
-     'name',
-     'slug',
-     'url',
-     'add_college_id',
-     'about',
-     'keywords',
-    ];
-    //
-    public function addCollege()
-    {
-        # code...
-        return $this->belongsTo(addCollege::class,'add_college_id');
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d4a912f7645d48ff876d404e7d5dfa76d5573682ff748c87f49f73e5bf7c099
+size 502

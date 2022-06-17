@@ -1,20 +1,3 @@
-<?php
-
-namespace App\Http\Middleware;
-
-use Illuminate\Http\Middleware\TrustHosts as Middleware;
-
-class TrustHosts extends Middleware
-{
-    /**
-     * Get the host patterns that should be trusted.
-     *
-     * @return array
-     */
-    public function hosts()
-    {
-        return [
-            $this->allSubdomainsOfApplicationUrl(),
-        ];
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d56b5775436c20bbb5bd75d5f2985b6befb8b4d07303ac783063e136ccb9818
+size 374

@@ -1,34 +1,3 @@
-<?php
-
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-class CreateAddCitiesTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('add_cities', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-			$table->string('slug');
-			$table->foreignId('add_countrie_id')->constrained()->cascadeOnDelete();
-            $table->timestamps();
-        });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('add_cities');
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7584dd9b17d2f4ff7974731a7610be147c2c5209a23b27bb836726ea0d5677df
+size 760

@@ -1,34 +1,3 @@
-<?php
-
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-class CreateImportantLinksTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('important_links', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('url');
-            $table->string('slug');
-            $table->timestamps();
-        });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('important_links');
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec4d355808922dd1ee4458d62e8731e30fb8421cdbc54046cee08c2a6daf9424
+size 745

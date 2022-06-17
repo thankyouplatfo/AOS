@@ -1,28 +1,3 @@
-<?php
-
-namespace Database\Factories;
-
-use App\Models\addCategoryTool;
-use Illuminate\Database\Eloquent\Factories\Factory;
-
-class AddCategoryToolFactory extends Factory
-{
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = addCategoryTool::class;
-
-    /**
-     * Define the model's default state.
-     *
-     * @return array
-     */
-    public function definition()
-    {
-        return [
-            //
-        ];
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce94784a830ee85af799c7af5e34a408258d052e36edd775f38aa60eaf98c6cd
+size 517

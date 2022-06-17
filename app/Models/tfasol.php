@@ -1,16 +1,3 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class tfasol extends Model
-{
-    use HasFactory;
-    protected $fillable = [
-        'file',
-        'title',
-        'openClose',
-    ];
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb00a0bb00bcedb19d1cd7cd4cee2ee148601079bb30e51b3720b3a1a5d02407
+size 282

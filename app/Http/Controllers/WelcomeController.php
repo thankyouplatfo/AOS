@@ -1,16 +1,3 @@
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Models\Category;
-use App\Models\CMSHomePageBgHeader;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-
-class CategoryController extends Controller
-{
-    public function index()
-    {
-        return view('welcome'/**, ['items' => Category::latest()->id()->get()] */);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f2b7cc8d97738dba9002a972708b2cb8cfd15034ff7ffc2df6035d2132b2793d
+size 354

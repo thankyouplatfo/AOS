@@ -1,28 +1,3 @@
-<?php
-
-namespace Database\Factories;
-
-use App\Models\addTool;
-use Illuminate\Database\Eloquent\Factories\Factory;
-
-class AddToolFactory extends Factory
-{
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = addTool::class;
-
-    /**
-     * Define the model's default state.
-     *
-     * @return array
-     */
-    public function definition()
-    {
-        return [
-            //
-        ];
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b83e01c96ab83724851c1aae7e9d64cce49f78aae6ce6d3ec47ea0e37b254ec
+size 493
